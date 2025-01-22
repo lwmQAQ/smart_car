@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 背景图片（后期可替换为视频流） -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@color/white" />
+
+    <!-- 大圆形（背景） -->
+    <ImageView
+        android:id="@+id/joystick_background"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/background" />
+
+    <!-- 小圆形（摇杆） -->
+    <ImageView
+        android:id="@+id/joystick_thumb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@id/joystick_background"
+        android:layout_alignBottom="@id/joystick_background"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="76dp"
+        android:src="@drawable/drawicon_14" />
+</RelativeLayout>
